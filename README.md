@@ -20,6 +20,8 @@ I have sketched up the initial design in mobile, tablet and monitor sizes so tha
 
 This will be for dependencies as I go through this project - complete as they come through.
 + [Bootstrap](https://getbootstrap.com/) has been used throughout the project to add items like a navbar and a footer. The main reason for this is to mitigate the need for written Javascript to create a responsive site. I have annotated throughout the project, the key areas this has been used.
++ [Favicon.io](https://favicon.io/emoji-favicons/love-you-gesture) has been used to generate a quick to recognise image for a favicon meaning you can link it to the page in each tab.
++ [Font Awesome](https://fontawesome.com/kits/524dbc89dc/setup) has been used to add icons and allow them to be easily edited.
 
 ## Bug problems and solutions
 
