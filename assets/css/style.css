@@ -13,8 +13,23 @@
 
 /* background image styles for the body */
 body {
-    background-image: src('../assets/images/milestone-1-background.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: center;
+    background-color: var(--highlight-color);
+}
+
+.navbar {
+    background-color: var(--secondary-color) !important;
+    color: var(--text-color) !important;
+    font-family: var(--primary-font) !important;
+}
+.card {
+    padding: 2rem;
+    margin: 1rem;
+    font-family: var(--primary-font) !important;
+}
+
+.card-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
