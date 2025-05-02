@@ -25,6 +25,8 @@ This will be for dependencies as I go through this project - complete as they co
 + [Google Fonts](https://fonts.google.com/selection/embed) has been used to give a consistent font accross the site. I have chosen this font as it has a clean look but with a bit of a gothic style to it.
 + [Microsoft Image Designer](https://designer.microsoft.com/image-creator) has been used to create images for the site, including the background and some of the more advanced tiles.
 + [IMGOnline](https://www.imgonline.com.ua/eng/get-dominant-colors.php) has been used to pull the dominant colours out of my 'milestone-1-background' image to create a baseline for the website.
++ [HTML and CSS3 for dummies book](https://www.dummies.com/article/technology/programming-web-design/html5/html5-and-css3-all-in-one-for-dummies-cheat-sheet-207788/) has been used as a booster on the Code Institute lesson content to enhance my learning and add some extra tips and tricks in.
++ [Coding with JavaScript for dummies book](https://www.dummies.com/article/technology/programming-web-design/javascript/javascript-for-dummies-cheat-sheet-207619/) has been used in addition to the above book to enhance my learning of JavaScript.
 
 ## Bug problems and solutions
 
@@ -36,7 +38,11 @@ These bugs were found as I was writing the code, not whilst testing, hence being
 
 All images below have been compressed using iloveimg.com to help with load speed on the website.
 
-+ 
++ [Background image](assets/images/punk-match.jpeg) alt, A themed image of different punk items with a neon lit background.
++ [Punk Guitar](assets/images/punk-guitar.jpeg) alt, A punk designed guitar with a festival croud in the background.
++ [Patch Jacket](assets/images/patch-jacket.jpeg) alt, A denim jacket with patches and studs.
++ [Punk Bar](assets/images/punk-bar.jpeg) alt, A punk themed bar with a live band playing.
+
 
 ## Deployment process
 

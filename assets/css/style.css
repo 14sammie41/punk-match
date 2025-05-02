@@ -11,7 +11,7 @@
     /* --secondary-highlight-color: #ca2227; don't know if needed yet - it's red */
 }
 
-/* background image styles for the body */
+/* Global styles */
 body {
     background-color: var(--highlight-color);
 }
@@ -22,7 +22,7 @@ body {
     font-family: var(--primary-font) !important;
 }
 .card {
-    padding: 2rem;
+    padding: 1rem;
     margin: 1rem;
     font-family: var(--primary-font) !important;
 }
@@ -32,4 +32,16 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    max-width: 800px;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.card-text {
+    color: var(--text-color) !important;
+    text-align: center;
 }
