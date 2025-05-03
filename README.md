@@ -39,11 +39,13 @@ These bugs were found as I was writing the code, not whilst testing, hence being
 
 All images below have been compressed using iloveimg.com to help with load speed on the website.
 
-+ [Background image](assets/images/punk-match.jpeg) alt, A themed image of different punk items with a neon lit background.
++ [Punk Themed Image](assets/images/punk-match.jpeg) alt, A themed image of different punk items with a neon lit background.
 + [Punk Guitar](assets/images/punk-guitar.jpeg) alt, A punk designed guitar with a festival croud in the background.
 + [Patch Jacket](assets/images/patch-jacket.jpeg) alt, A denim jacket with patches and studs.
 + [Punk Bar](assets/images/punk-bar.jpeg) alt, A punk themed bar with a live band playing.
-
++ [Guitar Icon](assets/images/guitar-icon.png) alt, A simple electric guitar icon.
++ [Back of Card Logo](assets/images/card-back-punk.png) alt, A side on line icon of a person with a mohawk.
++ [Rock/Punk hand sign with mic](assets/images/rock-punk-icon.png) alt, A line icon of a hand doing the rock sign holding a mic.
 
 ## Deployment process
 
