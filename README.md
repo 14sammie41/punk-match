@@ -27,6 +27,7 @@ This will be for dependencies as I go through this project - complete as they co
 + [IMGOnline](https://www.imgonline.com.ua/eng/get-dominant-colors.php) has been used to pull the dominant colours out of my 'milestone-1-background' image to create a baseline for the website.
 + [HTML and CSS3 for dummies book](https://www.dummies.com/article/technology/programming-web-design/html5/html5-and-css3-all-in-one-for-dummies-cheat-sheet-207788/) has been used as a booster on the Code Institute lesson content to enhance my learning and add some extra tips and tricks in.
 + [Coding with JavaScript for dummies book](https://www.dummies.com/article/technology/programming-web-design/javascript/javascript-for-dummies-cheat-sheet-207619/) has been used in addition to the above book to enhance my learning of JavaScript.
++ [Flaticon]("https://www.flaticon.com/free-icons/punk") Has been used to generate some generic punk themed icons for my playing cards.
 
 ## Bug problems and solutions
 
