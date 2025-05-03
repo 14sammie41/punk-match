@@ -4,6 +4,10 @@
 
 This is a simple memory based match game with a punk theme to keep things lively.
 
+### Interesting notes
+
++ When deciding on reaction times and the time taken for certain things to happen on the page, for example, card flips, i really wanted to make sure that it was a psychologically reasonable time frame. Memory games are about ensuring the match itself is registered and if no match is found, allowing the brain to remember what has been seen to allow for the next match to be easier. For those of us of a younger disposition it is much easier for us to remember things within a quicker time frame. As we get older it becomes harder to retain information. I would like to be able to add a function to the game where you input your age before you start meaning the game would change the amount of time the cards were on the screen dependant on what your theoretical mental capacity was. I have not done it on this version of the game because i ran out of time to add the function properly but i think it would have been a really nice addition.
+
 ## User interactions
 
 The idea is to have four punk style logo's or images showing on screen and then have to put them in relevant order as shown on previous screen.
