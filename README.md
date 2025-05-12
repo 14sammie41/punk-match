@@ -32,12 +32,14 @@ This will be for dependencies as I go through this project - complete as they co
 + [HTML and CSS3 for dummies book](https://www.dummies.com/article/technology/programming-web-design/html5/html5-and-css3-all-in-one-for-dummies-cheat-sheet-207788/) has been used as a booster on the Code Institute lesson content to enhance my learning and add some extra tips and tricks in.
 + [Coding with JavaScript for dummies book](https://www.dummies.com/article/technology/programming-web-design/javascript/javascript-for-dummies-cheat-sheet-207619/) has been used in addition to the above book to enhance my learning of JavaScript.
 + [Flaticon]("https://www.flaticon.com/free-icons/punk") Has been used to generate some generic punk themed icons for my playing cards.
++ [W3 Schools](https://www.w3schools.com/js/js_popup.asp) Has been used to better understand the alerts used for the step by step instructions and congratulatory messages.
 
 ## Bug problems and solutions
 
 These bugs were found as I was writing the code, not whilst testing, hence being at this point in the README file.
 
-+ 
++ I had originally set the height and width of the card-game to 640px because the cards then show in the same ratio as an actual card game, however when I then added the navbar to the top of the page, the cards were dropping off the bottom of the page. I retrospectively changed the height and width of the card game to allow for them to still look like real playing cards but to fit on the page with the nav bar when on a laptop screen.
++ Having set up the basic framework for the game and being happy with the initial functionality of it i found that when reducing screen size down to below 768px (tablet screen size) i was going down to only three cards per row. Initially i adjusted the media queries to reduce the overall size of the game but did not factor in the overall size of cards plus margins. I used Co-pilot to find a solution which i had never used before. I used the flexbox attribute alongside the gap property to mitigate the issues with margins also simplifying the overall code.
 
 ## Source for images and text
 

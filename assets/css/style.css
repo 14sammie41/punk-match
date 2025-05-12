@@ -16,13 +16,29 @@ body {
     background-color: var(--highlight-color);
     display: flex;
     height: 100vh;
+    /* Padding added to keep the navbar from overlapping the rest of the content */
+    padding-top: 60px;
+}
 
+h1,
+p {
+    color: var(--text-color);
+    font-family: var(--primary-font);
+    text-align: center;
+    margin: 0;
+    padding: 1rem;
 }
 
 .navbar {
     background-color: var(--secondary-color) !important;
     color: var(--text-color) !important;
     font-family: var(--primary-font) !important;
+    /* The following CSS is designed to put the navbar at the top of the page and make it responsive */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* This will make sure the navbar is always on top of the game */
 }
 
 * {
@@ -31,10 +47,17 @@ body {
     box-sizing: border-box;
 }
 
+.btn {
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+    font-family: var(--primary-font);
+}
+
+/* Styles for the game including card styles */
 .memory-game {
     width: 640px;
     height: 640px;
-    margin: auto;
+    margin: 10px auto;
     display: flex;
     flex-wrap: wrap;
     perspective: 900px; /* Adding the 3D element to the flip to make it more pronounced */
@@ -47,9 +70,9 @@ body {
     position: relative;
     box-shadow: 1px 1px 1px var(--text-color);
     border-radius: 5px;
-    transform: scale(1); /* This adds to the :active pseudo-class to make the card smaller when clicked */
-    transform-style: preserve-3d; /* This will keep the tranformation on the screen instead of it being flattened */
-    transition: transform 0.5s ease; /* The transformation will look smoother with this */
+    transform: scale(1); /* This adds to the :active pseudo-class to make the card shrink and pop when clicked */
+    transform-style: preserve-3d; /* This will stop the transformation from reverting */
+    transition: transform 0.5s ease; /* The transformation will be more pronounced */
 }
 
 /* Using the :active pseudo-class to show the user which cards they have clicked. */
@@ -76,4 +99,18 @@ body {
 /* CSS to link to the JavaScript forEach card to make them flip when clicked */
 .memory-card.flip {
     transform: rotateY(180deg);
+}
+
+/* Media queries to make the game responsive on smaller screens */
+@media screen and (max-width: 768px) {
+    .memory-game {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+
+    .memory-card {
+        width: calc(25% - 10px);
+        height: calc(33.333% - 10px);
+    }
 }
