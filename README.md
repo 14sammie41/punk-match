@@ -10,13 +10,13 @@ This is a simple memory based match game with a punk theme to keep things lively
 
 ## User interactions
 
-The idea is to have four punk style logo's or images showing on screen and then have to put them in relevant order as shown on previous screen.
+I will have 12 cards on show in the game, each of which has a back, with the same image on, just like a set of playing gards. Then on the other side of the cards there will be six images, each of which has an exact matching card. Then the player simply clicks to choose a card and then again for a second card. Once the player has picked two cards initially the game will work out if they match or not. If they match they will stay flipped over so the player knows. If they don't match they will flip back over to the back back side automatically and this will repeat until all cards are matched. Every time a match is found the 'pairs' score will go up.
 
 ## Wireframe of the site on all screen sizes:
 
-I have sketched up the initial design in mobile, tablet and monitor sizes so that there is a baseline to work from. The bulk of the images will come from AI generation, so there will be no risk of plagiarism.
+I have sketched up the initial design in mobile, tablet and monitor sizes so that there is a baseline to work from. The bulk of the images will come from AI generation, so there will be no risk of plagiarism. I have also used icons as images for the cards - these have been attributed below. In complete honesty after completing the project I have gone back through this and noticed I created my wireframe with a lot less interactivity. This developed as the project developed as it allows me to show off my JavaScript more.
 
-+ ![wireframe of my homepage]()
++ ![wireframe of my homepage](assets/images/punk-match-wireframe.png)
 
 ## How to:
 
@@ -38,8 +38,8 @@ This will be for dependencies as I go through this project - complete as they co
 
 These bugs were found as I was writing the code, not whilst testing, hence being at this point in the README file.
 
-+ I had originally set the height and width of the card-game to 640px because the cards then show in the same ratio as an actual card game, however when I then added the navbar to the top of the page, the cards were dropping off the bottom of the page. I retrospectively changed the height and width of the card game to allow for them to still look like real playing cards but to fit on the page with the nav bar when on a laptop screen.
-+ Having set up the basic framework for the game and being happy with the initial functionality of it i found that when reducing screen size down to below 768px (tablet screen size) i was going down to only three cards per row. Initially i adjusted the media queries to reduce the overall size of the game but did not factor in the overall size of cards plus margins. I used Co-pilot to find a solution which i had never used before. I used the flexbox attribute alongside the gap property to mitigate the issues with margins also simplifying the overall code.
++ I have set the height and width of the card-game to 640px because the cards then show in the same ratio as an actual card game, however when I then added the navbar to the top of the page, the cards were dropping off the bottom of the page. I decided to leave it at 640px with a few flex adjustments to allow for the page to change with screen sizes using media queries.
++ Having set up the basic framework for the game and being happy with the initial functionality of it i found that when reducing screen size down to below 768px (tablet screen size) i was going down to only three cards per row. Initially i adjusted the media queries to reduce the overall size of the game but did not factor in the overall size of cards plus margins. I decided that the best way to resolve this was to continue on from the above error and use media queries to add to the flex characteristics of the page.
 
 ## Source for images and text
 
@@ -77,7 +77,15 @@ Deployment, step-by-step guide:
 
 ## Testing
 
-As this milestone is all about JavaScript i will be doing more automated testing so therefore i will link to my test page below.
+### Testing through a linter:
+
+I used JSLint to test my Javascript to ensure it passes through a linter.
++ 13 initial problems found when testing through JSLint on my .js file.
++ Problems one and two were because the line exceeded 80 characters. Unfortunately this is because there is a message for the user in them.
++ Problem two is because I have called two functions in the same let. This is to minimize the required code instead of repeating myself.
++ Problem four was a suggestion to put a function inside a function instead of using a arrow function. I have chosen to leave this as is otherwise it is more confusing to me having a function within a function.
++ Problem six is as a result of having a number of action within a single function. I have again chosen to leave this function as I had written it as this is easier to read and understand due to the complexity of the function itself.
++ Problem five and problem seven through to thirteen are the same as problems one and two, caused by over 80 characters per line. These are comments for my benefit and a note to the user so again must stay as they are.
 
 ### Testing as a user for navigation purposes:
 + 

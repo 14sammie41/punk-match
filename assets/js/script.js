@@ -1,14 +1,16 @@
-/**
- * Using a query selector to select all the cards and add the flip event
- */
+// Using a query selector to select all the cards and add the flip event
 const cards = document.querySelectorAll(".memory-card");
 
-window.confirm("Welcome to Punk Match! Click OK to get started!");
+// This will stop the pop up to start the game from coming up on every page.
+if (window.location.pathname === "/index.html" && window.location.pathname !== "/") {
+window.confirm("Welcome to Punk Match! Click OK to get started! Or got to the help page for more info.");
+}
 
 // These variables are used to track the state of the game
 let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard;
+let myScore = 0;
 
 // This function is immediately invoked after its declaration.
 (function shuffle() {
@@ -44,10 +46,20 @@ function flipCard() {
 function checkForMatch() {
   if (firstCard.dataset.framework === secondCard.dataset.framework) {
     disableCards();
+    updateScore();
     return;
   }
   // If the cards don't match this will reset the deck
   unflipCards();
+}
+
+function updateScore() {
+  myScore++; // This will increase the score by 1
+  const pairsElement = document.getElementById("pairs");
+  if (pairsElement) {
+    pairsElement.textContent = myScore; // This will update the score on the actual page
+  }
+
 }
 
 // This will remove the event listener causing the cards to stay flipped after the click
