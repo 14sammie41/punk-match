@@ -92,4 +92,14 @@ I used JSLint to test my Javascript to ensure it passes through a linter.
 
 ### Testing with validators:
 
+HTML validator for index.html:
++ 24 trailing slashes found and corrected.
++ Warning found for line 57 relating to <section> missing a heading, suggested to change to a <div> if no heading required which it isn't in this case as it is just to keep the button in the centre of the page. Chosen to keep it as a <section> as there is no need for a header but it gives me better versatility this way.
+
+HTML validator for help.html:
++ 9 trailing slashes found and corrected.
+
+CSS validator for style.css:
++ No errors found.
+
 + For all bugs I encountered whilst writing my initial code please refer to the 'bugs section' further up this page.
