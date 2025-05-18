@@ -12,6 +12,14 @@ This is a simple memory based match game with a punk theme to keep things lively
 
 I will have 12 cards on show in the game, each of which has a back, with the same image on, just like a set of playing gards. Then on the other side of the cards there will be six images, each of which has an exact matching card. Then the player simply clicks to choose a card and then again for a second card. Once the player has picked two cards initially the game will work out if they match or not. If they match they will stay flipped over so the player knows. If they don't match they will flip back over to the back back side automatically and this will repeat until all cards are matched. Every time a match is found the 'pairs' score will go up.
 
+### Testing - Automated vs. Manual
+
+When deciding on testing manually or automatically I had not realised that I would need to add a section on my reasoning and the advantages and disadvantages for the assesment criteria. I have been consistently manually testing throughout the development of the page by having a live version of the page open on Chrome through VSCode and each change I have made I have tested. This means my automated testing through Jest was essentially null and void by the time I came to checking back on the assesment criteria.
+
+The advantage for me of having a live version and manually testing as I develop is that I can see what the user would see (pre deployment obviously) meaning my user interaction testing at the end of the project takes a lot less time. The disadvantage from a long term or bigger project stand point is that it takes significantly longer to correct issues once you have already written a full function instead of doing it step by step. If this project had been bigger I would be much more likely to use automated testing to speed the overall process up.
+
+The advantage of automated testing is always going to be the less physical clicking and checking of the whole page. On my page the biggest area I would have done automated testing on in hindsight is getting the 'flip' function to work. I had to spend a lot of time writing and re writing the whole function as I could not work out the error. As you can see this is not a small or simple function so therefore I realise I could have made my life a lot easier had i gone the automated route.
+
 ## Wireframe of the site on all screen sizes:
 
 I have sketched up the initial design in mobile, tablet and monitor sizes so that there is a baseline to work from. The bulk of the images will come from AI generation, so there will be no risk of plagiarism. I have also used icons as images for the cards - these have been attributed below. In complete honesty after completing the project I have gone back through this and noticed I created my wireframe with a lot less interactivity. This developed as the project developed as it allows me to show off my JavaScript more.
@@ -88,7 +96,16 @@ I used JSLint to test my Javascript to ensure it passes through a linter.
 + Problem five and problem seven through to thirteen are the same as problems one and two, caused by over 80 characters per line. These are comments for my benefit and a note to the user so again must stay as they are.
 
 ### Testing as a user for navigation purposes:
-+ 
++ The first manual test I completed was to open the site through the live preview within VSCode.
++ When loading up on a laptop, everything is in the right place, clear and not obstructed within the window. The first thing I noticed was the font for the 'Scores' title was not the same as the rest of the page. This was easily corrected by added the `h2` selector into my CSS file.
++ Next I clicked one card to confirm the flip function was working. Which it was, then onto clicking the second card. Conveniently the second card I picked was a match. This showed that the `match` function was working. This also showed that the incremental increase on the scores section was working because the score went up by one as I had found a match.
++ Next I clicked another two cards. This was no match and I can confirm it did not stay on the screen and the score did not increase so this proves that the function to return the cards to their original position in the case of a no match is working.
++ Next I clicked through each card to ensure the game completes when all cards are matched. Once all cards are matched the score hits six which is correct.
++ I next checked that the `Reset Game` button was working. Which it wasn't, i sussed out that the first issue with the button was that it didn't have a `href` attribute, therefore was not linking back to the page load. The second issue was that the `href` attribute just re confirms the page that we are already on. Finally i worked out that i had put it in a `button` tag when it needs to be in a `a` tag to be able to work.
++ Next I tested the nav bar to ensure it directed correctly, firstly I played the game for two matches then clicked the rest button on the nav bar. This confirmed that the game would fully reset when I clicked it. Then i checked that the help button on the nav bar took me to the `help.html` page. I confirmed this took me to the `help.html` page.
++ The next test was easy to determine as I was already on the `help.html` page. I checked that the `Let's Play!` button took me to the `index.html` page, which it did. Then I went back to the `help.html` page and noticed the `Help` button was not active on the page so added the `active` attribute to that nav link to make that work.
++ Whilst I was changing the `active` attribute, I noticed that the page title button didn't have a `href` attatched to it so therefore it wouldn't link back to the game page when clicked, so I added that in on both the `index.html` page and the `help.html` page. I checked both of these buttons now worked.
++ The final button to test was the `Let's Play` button on the `help.html` page. I confirmed this was working.
 
 ### Testing with validators:
 
