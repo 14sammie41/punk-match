@@ -125,6 +125,10 @@ p {
         height: calc(33.333% - 10px);
     }
 
+    body {
+        flex-direction: column;
+    }
+
     section {
         display: flex;
         flex-direction: column;
