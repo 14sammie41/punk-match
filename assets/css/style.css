@@ -124,4 +124,10 @@ p {
         width: calc(25% - 10px);
         height: calc(33.333% - 10px);
     }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
